@@ -10,7 +10,7 @@ from sklearn.metrics import mean_squared_log_error
 import matplotlib.pyplot as plt
 
 
-train = pd.read_csv('/Users/yeshaswiniindukuri/Documents/kaggle/GOOGL.csv')
+train = pd.read_csv('GOOGL.csv')
 train['Date'] = pd.to_datetime(train['Date'])
 forecast_out = int(math.ceil(0.05 * len(train))) # getting 5 percent of data that we will predict
 
